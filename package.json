@@ -1,0 +1,25 @@
+{
+  "name": "angular-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpastoor/angular-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpastoor/angular-template/issues"
+  },
+  "homepage": "https://github.com/dpastoor/angular-template#readme",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1"
+  }
+}
