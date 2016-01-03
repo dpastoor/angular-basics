@@ -15,7 +15,11 @@
         </div>
         <div class="MessageList">
           <ul>
-            <li ng-repeat="message in messages | filter:{category: currentCategory.category}" ng-click="setCurrentCategory(message)">
+            <li
+            ng-repeat="message in messages | filter:{category: currentCategory.category}"
+            ng-click="setCurrentCategory(message)"
+            ng-class="{active:isCurrentCategory(message)}"
+            >
               Title: {{message.title}} for message: {{message.text}} with category: {{message.category}}
             </li>
           </ul>

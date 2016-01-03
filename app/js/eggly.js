@@ -20,9 +20,13 @@ angular.module('Eggly', [
   // to null does not work as expected, as it immediately filters
   // on the null category, rather than no filtering
   var setCurrentCategory = function(category) {
-      return $scope.currentCategory = category;
+      $scope.currentCategory = category;
   };
 
+  var isCurrentCategory = function(category) {
+    return $scope.currentCategory !== null && category.category === $scope.currentCategory.category;
+  };
   // attach to scope to make available to view
   $scope.setCurrentCategory = setCurrentCategory;
+  $scope.isCurrentCategory = isCurrentCategory;
 });

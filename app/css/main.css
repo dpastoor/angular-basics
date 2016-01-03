@@ -13,3 +13,7 @@ body {
 .MessageList {
   margin: auto;
 }
+
+.active {
+  color: red;
+}
