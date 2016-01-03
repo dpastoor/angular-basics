@@ -6,19 +6,21 @@
         <title>Eggly</title>
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body ng-controller="MainCtrl">
-        <div ng-init="message='world'">
+    <body>
+      <div class="App" ng-controller="MainCtrl">
+        <div class="Input" ng-init="message='world'">
           <h1>{{title}}</h1>
           <h3>{{message}}</h3>
           <input type="text" ng-model="message"/>
         </div>
-        <div>
+        <div class="MessageList">
           <ul>
             <li ng-repeat="message in messages">
               Title: {{message.title}} for message: {{message.text}}
             </li>
           </ul>
         </div>
+      </div>
 
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="../node_modules/angular/angular.min.js"></script>
